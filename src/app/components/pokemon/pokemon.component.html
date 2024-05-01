@@ -1,0 +1,9 @@
+<h2>Pokemon </h2>
+
+<ul>
+  @for (item of pokemons; track $index){
+
+    <li> <img [src]="item.imageUrl" alt=""> - {{item.id}} - {{item.name}} </li>
+    
+  }
+</ul>
