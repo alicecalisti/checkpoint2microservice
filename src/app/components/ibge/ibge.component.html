@@ -1,9 +1,21 @@
-<h2>Estados </h2>
-
-<ul>
-  @for (item of estados ; track $index){
-
-    <li> {{item.id}} - {{item.sigla}} - {{item.nome}} </li>
-    
-  }
-</ul>
+<div class="container mt-3">
+  <h2>Estados</h2>
+  <table class="table table-dark text-center">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Sigla</th>
+        <th>Nome</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (item of estados ; track $index){
+      <tr>
+        <td>{{item.id}}</td>
+        <td>{{item.sigla}}</td>
+        <td>{{item.nome}}</td>
+      </tr>
+    }
+    </tbody>
+  </table>
+</div>
